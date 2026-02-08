@@ -1,12 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Setu Digital Solutions | Home</title>
-    <link rel="stylesheet" href="/css/style.css">
+  <!-- Basic Meta -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Setu Digital Solutions | Web Development Agency</title>
+  <meta name="description" content="Setu Digital Solutions is a web development agency building fast, scalable, and SEO-optimized websites for modern businesses." />
+  <meta name="keywords" content="web development agency, website design, UI UX, frontend development, SEO websites" />
+  <meta name="author" content="Setu Digital Solutions" />
+
+  <!-- SEO / Social -->
+  <meta property="og:title" content="Setu Digital Solutions" />
+  <meta property="og:description" content="High-performance websites built for growth." />
+  <meta property="og:type" content="website" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="/css/reset.css" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/animations.css" />
 </head>
 <body>
-    
+
+  <!-- Header / Navbar -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Setu<span>Digital</span></a>
+      <nav class="navbar" aria-label="Primary Navigation">
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="work.html">Work</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" class="nav-cta">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="menu-toggle" aria-label="Open Menu"></button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero section">
+    <div class="container hero-grid">
+      <div class="hero-content animate fade-up">
+        <h1>We Build Websites That Drive Business Growth</h1>
+        <p>
+          A web development agency focused on performance, usability,
+          and long-term scalability.
+        </p>
+        <div class="hero-actions">
+          <a href="contact.html" class="btn primary">Start a Project</a>
+          <a href="#services" class="btn secondary">Our Services</a>
+        </div>
+      </div>
+      <div class="hero-visual animate fade-in">
+        <!-- Illustration / Graphic Placeholder -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Overview -->
+  <section id="services" class="services section">
+    <div class="container">
+      <header class="section-header animate fade-up">
+        <h2>What We Do</h2>
+        <p>End-to-end solutions for your digital presence</p>
+      </header>
+      <div class="services-grid">
+        <article class="service-card animate fade-up">
+          <h3>Website Development</h3>
+          <p>Fast, responsive, and SEO-friendly websites built with modern standards.</p>
+        </article>
+        <article class="service-card animate fade-up" data-delay="100">
+          <h3>UI / UX Design</h3>
+          <p>User-centered designs focused on clarity, usability, and conversions.</p>
+        </article>
+        <article class="service-card animate fade-up" data-delay="200">
+          <h3>Maintenance & Support</h3>
+          <p>Ongoing improvements, performance monitoring, and security updates.</p>
+        </article>
+      </div>
+      <div class="section-cta">
+        <a href="services.html" class="text-link">View All Services →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work Preview -->
+  <section class="work-preview section dark">
+    <div class="container">
+      <header class="section-header light animate fade-up">
+        <h2>Selected Work</h2>
+        <p>Real projects. Real results.</p>
+      </header>
+      <div class="work-grid">
+        <!-- Project cards placeholder -->
+      </div>
+      <div class="section-cta">
+        <a href="work.html" class="btn secondary">View Our Work</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Preview -->
+  <section class="about-preview section">
+    <div class="container about-grid">
+      <div class="about-content animate fade-up">
+        <h2>About Setu Digital Solutions</h2>
+        <p>
+          We help startups and businesses establish a strong digital foundation
+          through clean design, robust development, and strategic thinking.
+        </p>
+        <a href="about.html" class="text-link">Learn More About Us →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact CTA -->
+  <section class="cta section saffron">
+    <div class="container animate fade-up">
+      <h2>Have a project in mind?</h2>
+      <p>Let’s discuss how we can help your business grow online.</p>
+      <a href="contact.html" class="btn primary">Contact Us</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <h3>Setu Digital Solutions</h3>
+        <p>Building high-quality digital experiences.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer Navigation">
+        <ul>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="work.html">Work</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="footer-legal">
+        <p>© 2026 Setu Digital Solutions. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="/js/main.js"></script>
 </body>
 </html>

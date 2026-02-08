@@ -1,0 +1,171 @@
+:root {
+  --color-dark-blue: #0b1c2d;
+  --color-saffron: #f4a300;
+  --color-white: #ffffff;
+  --color-gray: #6b7280;
+  --font-primary: 'Inter', 'Poppins', 'Roboto', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-primary);
+  line-height: 1.6;
+  color: var(--color-dark-blue);
+  background-color: var(--color-white);
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section {
+  padding: 5rem 0;
+}
+
+.section.dark {
+  background-color: var(--color-dark-blue);
+  color: var(--color-white);
+}
+
+.section.saffron {
+  background-color: var(--color-saffron);
+  color: var(--color-dark-blue);
+}
+
+h1, h2, h3 {
+  line-height: 1.2;
+}
+
+/* Header */
+.header {
+  position: sticky;
+  top: 0;
+  background: var(--color-white);
+  border-bottom: 1px solid #e5e7eb;
+  z-index: 1000;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.25rem;
+  text-decoration: none;
+  color: var(--color-dark-blue);
+}
+
+.logo span {
+  color: var(--color-saffron);
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--color-dark-blue);
+  font-weight: 500;
+}
+
+.nav-cta {
+  padding: 0.5rem 1rem;
+  background: var(--color-saffron);
+  border-radius: 4px;
+}
+
+/* Hero */
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.hero h1 {
+  font-size: 2.75rem;
+}
+
+.hero-actions {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.btn.primary {
+  background: var(--color-dark-blue);
+  color: var(--color-white);
+}
+
+.btn.secondary {
+  border: 1px solid var(--color-dark-blue);
+  color: var(--color-dark-blue);
+}
+
+/* Services */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.service-card {
+  padding: 2rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+}
+
+/* Footer */
+.footer {
+  background: #020617;
+  color: #cbd5f5;
+  padding: 3rem 0;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+}
+
+.footer a {
+  color: #cbd5f5;
+  text-decoration: none;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .nav-links {
+    display: none;
+  }
+}
