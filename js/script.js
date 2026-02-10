@@ -3,17 +3,15 @@
   const FORM_SUBMISSION_TIMEOUT = 3000; // 3 seconds between submissions
   let lastSubmissionTime = 0;
 
-  // Email config - choose a provider and replace placeholders before deploying
-  // provider: 'emailjs' (client-side EmailJS) OR 'formsubmit' (free no-JS-required service)
+  // Load email config from CONFIG object (defined in js/config.js)
+  // Fallback to defaults if config.js is not loaded
   const EMAIL_CONFIG = {
-    provider: 'formsubmit', // 'formsubmit' is a free option (no account required for basic usage)
-    // For FormSubmit: set ownerEmail to the destination address where you want to receive form submissions
-    ownerEmail: 'setudigitalsolutions@gmail.com',
-    // For EmailJS (optional): set these if you prefer EmailJS
-    serviceId: 'service_faje7uh',
-    ownerTemplateId: 'YOUR_OWNER_TEMPLATE_ID',
-    userTemplateId: 'YOUR_USER_TEMPLATE_ID',
-    publicKey: 'pIciPRFqp6XA4seDF'
+    provider: (typeof CONFIG !== 'undefined' && CONFIG.EMAIL_PROVIDER) ? CONFIG.EMAIL_PROVIDER : 'formsubmit',
+    ownerEmail: (typeof CONFIG !== 'undefined' && CONFIG.FORM_SUBMIT_EMAIL) ? CONFIG.FORM_SUBMIT_EMAIL : 'YOUR_EMAIL@example.com',
+    serviceId: (typeof CONFIG !== 'undefined' && CONFIG.EMAILJS_SERVICE_ID) ? CONFIG.EMAILJS_SERVICE_ID : 'YOUR_EMAILJS_SERVICE_ID',
+    ownerTemplateId: (typeof CONFIG !== 'undefined' && CONFIG.EMAILJS_OWNER_TEMPLATE_ID) ? CONFIG.EMAILJS_OWNER_TEMPLATE_ID : 'YOUR_OWNER_TEMPLATE_ID',
+    userTemplateId: (typeof CONFIG !== 'undefined' && CONFIG.EMAILJS_USER_TEMPLATE_ID) ? CONFIG.EMAILJS_USER_TEMPLATE_ID : 'YOUR_USER_TEMPLATE_ID',
+    publicKey: (typeof CONFIG !== 'undefined' && CONFIG.EMAILJS_PUBLIC_KEY) ? CONFIG.EMAILJS_PUBLIC_KEY : 'YOUR_EMAILJS_PUBLIC_KEY'
   };
 
   // Initialize EmailJS if available and publicKey set
@@ -270,17 +268,24 @@
       csrf_token: safeParam(submittedToken)
     };
 
-    // Attempt to send emails via EmailJS (client-side). If not configured, inform user.
+    // Attempt to send emails using configured provider (FormSubmit or EmailJS)
     try {
-      if (!window.emailjs || !EMAIL_CONFIG.publicKey || EMAIL_CONFIG.serviceId === 'YOUR_EMAILJS_SERVICE_ID') {
-        // EmailJS not configured — fallback: just acknowledge submission
-        alert('Thanks ' + firstname + '! We received your inquiry and will get back to you within 24 hours. (Email delivery not configured)');
-        form.reset();
-        getCSRFToken();
-        return;
+      if (EMAIL_CONFIG.provider === 'formsubmit') {
+        if (!EMAIL_CONFIG.ownerEmail || EMAIL_CONFIG.ownerEmail.indexOf('@') === -1) {
+          // Not configured — fallback to simple acknowledgement
+          alert('Thanks ' + firstname + '! We received your inquiry and will get back to you within 24 hours. (Email delivery not configured)');
+          form.reset();
+          getCSRFToken();
+          return;
+        }
+      } else if (EMAIL_CONFIG.provider === 'emailjs') {
+        if (!window.emailjs || !EMAIL_CONFIG.publicKey || EMAIL_CONFIG.serviceId === 'YOUR_EMAILJS_SERVICE_ID') {
+          throw new Error('EmailJS not configured');
+        }
+        initEmailService();
       }
 
-      // Send owner + user templates
+      // Send owner + user templates or post to FormSubmit
       await sendEmailTemplates(templateParams);
 
       alert('Thanks ' + firstname + '! Your message was sent — we will respond within 24 hours.');

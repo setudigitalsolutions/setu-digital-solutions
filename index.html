@@ -456,19 +456,7 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js" defer></script>
-    <script>
-      // Initialize EmailJS when library loads; replace the public key with your value before deployment
-      document.addEventListener('DOMContentLoaded', function () {
-        if (window.emailjs && typeof emailjs.init === 'function') {
-          try {
-            // Placeholder: set your EmailJS public key in `js/script.js` `EMAIL_CONFIG.publicKey`
-            // emailjs.init('YOUR_EMAILJS_PUBLIC_KEY');
-          } catch (err) {
-            // silent
-          }
-        }
-      });
-    </script>
+    <script src="js/config.js" defer></script>
     <script src="js/script.js" defer></script>
   </body>
 </html>
