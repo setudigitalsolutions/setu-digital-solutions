@@ -1,167 +1,217 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <!-- Basic Meta -->
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>About Us | Setu Digital Solutions</title>
-  <meta name="description" content="Learn about Setu Digital Solutions — our story, approach, and commitment to building high-quality web experiences." />
-  <meta name="keywords" content="about web agency, web development company, frontend experts, digital solutions" />
-  <meta name="author" content="Setu Digital Solutions" />
-
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
-
-  <!-- Styles -->
-  <link rel="stylesheet" href="css/reset.css" />
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/animations.css" />
-</head>
-<body>
-
-  <!-- Header -->
-  <header class="header">
-    <div class="container header-inner">
-      <a href="index.html" class="logo">Setu<span>Digital</span></a>
-      <nav class="navbar" aria-label="Primary Navigation">
-        <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="work.html">Work</a></li>
-          <li><a href="about.html" class="active">About</a></li>
-          <li><a href="contact.html" class="nav-cta">Contact</a></li>
-        </ul>
-      </nav>
-      <button class="menu-toggle" aria-label="Open Menu"></button>
-    </div>
-  </header>
-
-  <!-- Page Hero -->
-  <section class="section hero">
-    <div class="container animate fade-up">
-      <h1>About Setu Digital Solutions</h1>
-      <p>
-        A web development agency built on clarity, quality, and long-term
-        thinking.
-      </p>
-    </div>
-  </section>
-
-  <!-- Story Section -->
-  <section class="section">
-    <div class="container animate fade-up">
-      <h2>Our Story</h2>
-      <p>
-        Setu Digital Solutions was founded with a simple belief: businesses
-        deserve websites that are not only visually appealing but also
-        technically sound and purpose-driven.
-      </p>
-      <p>
-        What started as a learning journey into modern web technologies has
-        evolved into a focused effort to help startups and businesses build
-        reliable, scalable digital foundations.
-      </p>
-    </div>
-  </section>
-
-  <!-- Positioning -->
-  <section class="section dark">
-    <div class="container animate fade-up">
-      <h2>How We Think</h2>
-      <p>
-        We approach every project with a balance of design, engineering, and
-        business understanding. Our focus is not just on delivering a website,
-        but on solving real problems through thoughtful digital solutions.
-      </p>
-      <ul>
-        <li>Clarity over complexity</li>
-        <li>Performance over bloat</li>
-        <li>Long-term scalability over quick fixes</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Credibility -->
-  <section class="section">
-    <div class="container">
-      <div class="services-grid">
-        <article class="service-card animate fade-up">
-          <h3>Technical Foundation</h3>
-          <p>
-            Strong fundamentals in HTML, CSS, and JavaScript with a focus on
-            modern best practices and clean architecture.
-          </p>
-        </article>
-        <article class="service-card animate fade-up" data-delay="100">
-          <h3>Hands-on Experience</h3>
-          <p>
-            Experience gained through real projects, learning-based builds,
-            and continuous experimentation.
-          </p>
-        </article>
-        <article class="service-card animate fade-up" data-delay="200">
-          <h3>Client-First Approach</h3>
-          <p>
-            Transparent communication, realistic timelines, and solutions
-            aligned with client goals.
-          </p>
-        </article>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>About — Setu Digital Solutions</title>
+    <meta
+      name="description"
+      content="Learn about Setu Digital Solutions. We build professional websites fast, focused on speed, clarity, and measurable results for businesses and professionals."
+    />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <meta name="theme-color" content="#0b3d91" />
+    <meta property="og:title" content="About — Setu Digital Solutions" />
+    <meta
+      property="og:description"
+      content="Discover our mission, values, and commitment to building professional websites."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="/about.html" />
+    <meta property="og:site_name" content="Setu Digital Solutions" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Setu Digital Solutions",
+        "description": "Professional website solutions for businesses and professionals.",
+        "url": "/about.html"
+      }
+    </script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-row">
+        <a class="brand" href="index.html"><span>Setu</span>Digital</a>
+        <button
+          class="nav-toggle"
+          aria-controls="primary-nav"
+          aria-expanded="false"
+          aria-label="Open menu"
+        >
+          <span class="hamburger"></span>
+        </button>
+        <nav id="primary-nav" class="primary-nav" aria-label="Main navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="work.html">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <a class="btn" href="contact.html">Get A Quote</a>
       </div>
-    </div>
-  </section>
+    </header>
 
-  <!-- Values -->
-  <section class="section saffron">
-    <div class="container animate fade-up">
-      <h2>Our Values</h2>
-      <p>
-        Every project we take on is guided by principles that ensure quality
-        and trust.
-      </p>
-      <ul>
-        <li>Quality-driven development</li>
-        <li>Honest collaboration</li>
-        <li>Continuous improvement</li>
-      </ul>
-    </div>
-  </section>
+    <main>
+      <section class="hero-page">
+        <div class="container">
+          <h1>About Setu Digital Solutions</h1>
+          <p class="lead">Building professional websites with proactive support and trust</p>
+        </div>
+      </section>
 
-  <!-- CTA -->
-  <section class="section">
-    <div class="container animate fade-up">
-      <h2>Let’s Work Together</h2>
-      <p>
-        If you’re looking for a reliable partner to build or improve your
-        digital presence, we’d love to talk.
-      </p>
-      <a href="contact.html" class="btn primary">Get in Touch</a>
-    </div>
-  </section>
+      <section class="about-section container">
+        <div class="whoarewe">
+          <div>
+            <h2>Who We Are</h2>
+            <p>
+              Setu Digital Solutions is a web development agency dedicated to building fast, clean, and mobile-friendly
+              websites for businesses and professionals. We understand that every business is unique, and we tailor our
+              solutions to match your specific needs and goals.
+            </p>
+            <p>
+              Our team brings years of experience in web design and development, specializing in creating sites that not
+              only look great but perform exceptionally well across all devices.
+            </p>
+          </div>
+        </div>
+      </section>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container footer-grid">
-      <div>
-        <h3>Setu Digital Solutions</h3>
-        <p>Focused on building meaningful digital experiences.</p>
+      <section class="values-section container">
+        <h2>Our Core Values</h2>
+        <div class="values-grid">
+          <article class="value-card">
+            <div class="value-icon">⚡</div>
+            <h3>Speed</h3>
+            <p>Fast websites that load instantly and keep your visitors engaged. Performance is non-negotiable.</p>
+          </article>
+
+          <article class="value-card">
+            <div class="value-icon">💎</div>
+            <h3>Quality</h3>
+            <p>Every website is built to the highest standards with attention to detail and clean code.</p>
+          </article>
+
+          <article class="value-card">
+            <div class="value-icon">🤝</div>
+            <h3>Trust</h3>
+            <p>We're proactive, responsive, and committed to your success. You're our priority.</p>
+          </article>
+
+          <article class="value-card">
+            <div class="value-icon">🎯</div>
+            <h3>Results</h3>
+            <p>Every element is built for conversions. We focus on measurable outcomes for your business.</p>
+          </article>
+
+          <article class="value-card">
+            <div class="value-icon">🌍</div>
+            <h3>Accessibility</h3>
+            <p>Websites that work for everyone, on every device, with proper SEO and accessibility standards.</p>
+          </article>
+
+          <article class="value-card">
+            <div class="value-icon">⏰</div>
+            <h3>Reliability</h3>
+            <p>Delivered on time, every time. 7-day turnaround with zero compromises on quality.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="mission-section container">
+        <div class="mission-content">
+          <h2>Our Mission</h2>
+          <p>
+            To empower businesses and professionals with professional, fast, and effective websites that drive growth and
+            success. We believe every business deserves a strong online presence, regardless of size.
+          </p>
+          <p>
+            Our mission is to make professional web development accessible, affordable, and hassle-free. We deliver
+            complete websites in 7 days with free domain, hosting, SSL, and business email — everything you need to
+            succeed online.
+          </p>
+        </div>
+      </section>
+
+      <section class="cta-section container">
+        <h2>Ready to work with us?</h2>
+        <p>Let's create something amazing together.</p>
+        <a class="btn btn-primary btn-lg" href="contact.html">Get In Touch</a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h4>Setu Digital Solutions</h4>
+            <p>
+              Building professional websites that drive real results for
+              businesses and professionals.
+            </p>
+            <div class="footer-socials">
+              <a
+                href="https://www.linkedin.com/company/setu-digital-solutions"
+                title="LinkedIn"
+                class="social-link"
+                target="_blank"
+                ><i class="fab fa-linkedin-in"></i></a
+              >
+              <a href="https://twitter.com/setudigisol" title="Twitter" class="social-link" target="_blank"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.instagram.com/setudigitalsolutions" title="Instagram" class="social-link" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+
+          <div class="footer-section">
+            <h4>Services</h4>
+            <ul class="footer-links">
+              <li><a href="services.html">Business Websites</a></li>
+              <li><a href="services.html">Portfolio Sites</a></li>
+              <li><a href="services.html">E-Commerce</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h4>Company</h4>
+            <ul class="footer-links">
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="work.html">Our Work</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="footer-copyright">
+            <p>
+              © <span id="year"></span> Setu Digital Solutions. All rights
+              reserved.
+            </p>
+          </div>
+          <div class="footer-tagline">
+            <p>
+              Crafted with <span class="heart">❤️</span> to help businesses grow
+              online.
+            </p>
+          </div>
+        </div>
       </div>
-      <nav aria-label="Footer Navigation">
-        <ul>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="work.html">Work</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-      <div>
-        <p>© 2026 Setu Digital Solutions</p>
-      </div>
-    </div>
-  </footer>
+    </footer>
 
-  <!-- Scripts -->
-  <script src="js/main.js"></script>
-</body>
+    <script src="js/script.js" defer></script>
+  </body>
 </html>

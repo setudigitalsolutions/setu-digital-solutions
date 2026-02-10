@@ -1,156 +1,474 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <!-- Basic Meta -->
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Setu Digital Solutions | Web Development Agency</title>
-  <meta name="description" content="Setu Digital Solutions is a web development agency building fast, scalable, and SEO-optimized websites for modern businesses." />
-  <meta name="keywords" content="web development agency, website design, UI UX, frontend development, SEO websites" />
-  <meta name="author" content="Setu Digital Solutions" />
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Setu Digital Solutions — Professional Websites in 7 Days</title>
+    <meta
+      name="description"
+      content="Setu Digital Solutions builds clean, fast, mobile-friendly websites for businesses and professionals. Delivered in 7 days. Free domain, hosting & SEO-ready sites."
+    />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <meta name="theme-color" content="#0b3d91" />
+    <meta
+      property="og:title"
+      content="Setu Digital Solutions — Professional Websites in 7 Days"
+    />
+    <meta
+      property="og:description"
+      content="Clean, fast, mobile-friendly websites for businesses and professionals. Free domain, hosting & SSL."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="/" />
+    <meta property="og:site_name" content="Setu Digital Solutions" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Setu Digital Solutions",
+        "description": "Professional websites for businesses and professionals — delivered in 7 days.",
+        "url": "/"
+      }
+    </script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-row">
+        <a class="brand" href="index.html"><span>Setu</span>Digital</a>
+        <button
+          class="nav-toggle"
+          aria-controls="primary-nav"
+          aria-expanded="false"
+          aria-label="Open menu"
+        >
+          <span class="hamburger"></span>
+        </button>
+        <nav id="primary-nav" class="primary-nav" aria-label="Main navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="work.html">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <a class="btn" href="contact.html">Get A Quote</a>
+      </div>
+    </header>
 
-  <!-- SEO / Social -->
-  <meta property="og:title" content="Setu Digital Solutions" />
-  <meta property="og:description" content="High-performance websites built for growth." />
-  <meta property="og:type" content="website" />
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-content">
+            <h1>
+              Professional Websites for businesses and professionals
+              <span>Delivered in 7 Days</span>
+            </h1>
+            <p class="lead">
+              Clean, Fast, Mobile Friendly Websites for Businesses and
+              Professionals
+            </p>
+            <div class="hero-ctas">
+              <a class="btn btn-primary" href="contact.html"
+                >Start Your Project</a
+              >
+              <a class="btn btn-ghost" href="services.html">Explore Services</a>
+            </div>
+          </div>
+          <div class="hero-art" aria-hidden="true">
+            <div class="device-mock">
+              <div class="mock-screen">
+                <img
+                  class="mock-card"
+                  src="/assets/NavbarLogo.PNG"
+                  alt="Mock Card"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
-
-  <!-- Styles -->
-  <link rel="stylesheet" href="/css/reset.css" />
-  <link rel="stylesheet" href="/css/style.css" />
-  <link rel="stylesheet" href="/css/animations.css" />
-</head>
-<body>
-
-  <!-- Header / Navbar -->
-  <header class="header">
-    <div class="container header-inner">
-      <a href="index.html" class="logo">Setu<span>Digital</span></a>
-      <nav class="navbar" aria-label="Primary Navigation">
-        <ul class="nav-links">
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="work.html">Work</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html" class="nav-cta">Contact</a></li>
-        </ul>
-      </nav>
-      <button class="menu-toggle" aria-label="Open Menu"></button>
-    </div>
-  </header>
-
-  <!-- Hero Section -->
-  <section class="hero section">
-    <div class="container hero-grid">
-      <div class="hero-content animate fade-up">
-        <h1>We Build Websites That Drive Business Growth</h1>
-        <p>
-          A web development agency focused on performance, usability,
-          and long-term scalability.
+      <section id="services" class="services container">
+        <h2>Services</h2>
+        <p class="section-sub">
+          For Businesses without websites, Professionals & Service Providers
         </p>
-        <div class="hero-actions">
-          <a href="contact.html" class="btn primary">Start a Project</a>
-          <a href="#services" class="btn secondary">Our Services</a>
+        <div class="services-grid">
+          <article class="service-card">
+            <h3>Business Websites</h3>
+            <p>
+              5–8 page, fully responsive websites for small & medium businesses.
+            </p>
+            <ul class="service-features">
+              <li>Fast loading & SEO-ready</li>
+              <li>Mobile & desktop optimized</li>
+              <li>Contact forms & CTAs</li>
+              <li>Conversion focused design</li>
+              <li>Easy to update content</li>
+            </ul>
+          </article>
+          <article class="service-card">
+            <h3>Portfolio Websites</h3>
+            <p>
+              Beautiful portfolios for photographers, designers, consultants and
+              freelancers.
+            </p>
+            <ul class="service-features">
+              <li>Professional gallery showcase</li>
+              <li>Project case studies</li>
+              <li>Client testimonials</li>
+              <li>Image optimization</li>
+              <li>Social media integration</li>
+            </ul>
+          </article>
+          <article class="service-card">
+            <h3>E‑Commerce Websites</h3>
+            <p>
+              Secure e-commerce setups for small businesses ready to sell
+              online.
+            </p>
+            <ul class="service-features">
+              <li>Product catalog pages</li>
+              <li>Secure payment integration</li>
+              <li>Order management</li>
+              <li>Mobile checkout</li>
+              <li>Inventory tracking</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="offerings" class="offerings container">
+        <h2>What We Offer</h2>
+        <div class="offerings-grid">
+          <div class="offering-card">
+            <div class="offering-icon">🎁</div>
+            <h3>Free Domain</h3>
+            <p>
+              Complimentary domain name setup for one year included with your
+              website package.
+            </p>
+          </div>
+          <div class="offering-card">
+            <div class="offering-icon">📄</div>
+            <h3>5–8 Pages</h3>
+            <p>
+              Home, About, Services, Work, Contact + extras tailored to your
+              business needs.
+            </p>
+          </div>
+          <div class="offering-card">
+            <div class="offering-icon">🚀</div>
+            <h3>Free Hosting</h3>
+            <p>
+              Reliable, fast hosting with CDN options to ensure your site loads
+              instantly.
+            </p>
+          </div>
+          <div class="offering-card">
+            <div class="offering-icon">🔒</div>
+            <h3>Free SSL Certificate</h3>
+            <p>
+              HTTPS security enabled by default to protect your visitors and
+              build trust.
+            </p>
+          </div>
+          <div class="offering-card">
+            <div class="offering-icon">✉️</div>
+            <h3>Free Business Email</h3>
+            <p>
+              Professional email address matching your domain to enhance
+              credibility.
+            </p>
+          </div>
+          <div class="offering-card">
+            <div class="offering-icon">📱</div>
+            <h3>Mobile Friendly</h3>
+            <p>
+              Pixel-perfect responsive layouts that work seamlessly on all
+              devices.
+            </p>
+          </div>
+          <div class="offering-card">
+            <div class="offering-icon">🔍</div>
+            <h3>SEO Friendly</h3>
+            <p>
+              On-page SEO best practices & fast performance to rank higher in
+              search engines.
+            </p>
+          </div>
+          <div class="offering-card">
+            <div class="offering-icon">✨</div>
+            <h3>Customized</h3>
+            <p>
+              Tailored to your brand, content & goals — no generic templates
+              here.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="work" class="work container">
+        <h2>Sample Work</h2>
+        <p class="section-sub">
+          Handpicked sites built for clarity, speed and conversions.
+        </p>
+        <div class="work-grid">
+          <article class="work-card">
+            <div class="work-image">☀️</div>
+            <h3>SolarTech Pro Solutions</h3>
+            <p class="work-category">Solar Manufacturer Website</p>
+            <p class="work-description">
+              Professional website showcasing multiple solar product lines,
+              specifications, and technology features. Includes product
+              comparison tools, technical documentation, and inquiry forms for
+              bulk orders.
+            </p>
+            <div class="work-features">
+              <span>Product Showcase</span>
+              <span>Specs & Docs</span>
+              <span>B2B Lead Gen</span>
+            </div>
+          </article>
+
+          <article class="work-card">
+            <div class="work-image">📸</div>
+            <h3>SnapMoments Studio</h3>
+            <p class="work-category">Photography & Videography</p>
+            <p class="work-description">
+              Beautiful portfolio website for professional photographer and
+              videographer specializing in weddings and events. Features gallery
+              galleries, service packages, testimonials, and online booking
+              system.
+            </p>
+            <div class="work-features">
+              <span>Photo Gallery</span>
+              <span>Video Gallery</span>
+              <span>Online Booking</span>
+            </div>
+          </article>
+
+          <article class="work-card">
+            <div class="work-image">📦</div>
+            <h3>PrintHub Stationery</h3>
+            <p class="work-category">E-Commerce + Printing Services</p>
+            <p class="work-description">
+              Full e-commerce platform for stationery shop with product catalog,
+              printing service options, order management, and home delivery
+              tracking. Offers custom banner printing, visiting cards, ID cards,
+              and bulk stationery orders.
+            </p>
+            <div class="work-features">
+              <span>E-Commerce</span>
+              <span>Custom Printing</span>
+              <span>Home Delivery</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="about" class="about container">
+
+        <div class="about-features">
+          <h3>What Makes Us Different</h3>
+          <div class="about-grid">
+            <div class="about-feature">
+              <div class="feature-icon">⚡</div>
+              <h4>Lightning Fast</h4>
+              <p>
+                Optimized performance ensures your site loads instantly on all
+                devices.
+              </p>
+            </div>
+            <div class="about-feature">
+              <div class="feature-icon">🎯</div>
+              <h4>Results Driven</h4>
+              <p>
+                Every element is designed to convert visitors into customers and
+                leads.
+              </p>
+            </div>
+            <div class="about-feature">
+              <div class="feature-icon">📱</div>
+              <h4>Mobile First</h4>
+              <p>
+                Fully responsive design that works flawlessly on every device
+                and screen size.
+              </p>
+            </div>
+            <div class="about-feature">
+              <div class="feature-icon">🔍</div>
+              <h4>SEO Optimized</h4>
+              <p>
+                Built with search engine best practices so you rank higher and
+                get found.
+              </p>
+            </div>
+            <div class="about-feature">
+              <div class="feature-icon">🚀</div>
+              <h4>7-Day Delivery</h4>
+              <p>
+                Fast turnaround without compromising quality. Your site, live in
+                a week.
+              </p>
+            </div>
+            <div class="about-feature">
+              <div class="feature-icon">🤝</div>
+              <h4>Full Support</h4>
+              <p>
+                Responsive support throughout the process and after launch.
+                We're here for you.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact container">
+        <h2>Contact Us</h2>
+        <p class="section-sub">Ready to grow? Let's talk.</p>
+        <form class="contact-form" action="#" onsubmit="handleContact(event)">
+          <div class="form-grid">
+            <div class="form-group">
+              <input
+                name="firstname"
+                type="text"
+                placeholder="First name"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <input
+                name="lastname"
+                type="text"
+                placeholder="Last name"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <input
+                name="email"
+                type="email"
+                placeholder="Email address"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <input
+                name="business"
+                type="text"
+                placeholder="Business name"
+                required
+              />
+            </div>
+            <div class="form-group full-width">
+              <textarea
+                name="message"
+                placeholder="Tell us about your project..."
+                rows="5"
+                required
+              ></textarea>
+            </div>
+            <input type="hidden" name="csrf_token" id="csrf_token" value="" />
+            <input type="hidden" name="honeypot" style="display: none" />
+            <button class="btn btn-primary btn-lg" type="submit">
+              Send Message
+            </button>
+          </div>
+          <p class="form-note">
+            We typically respond within 24 hours. Your information is secure and
+            never shared.
+          </p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h4>Setu Digital Solutions</h4>
+            <p>
+              Building professional websites that drive real results for
+              businesses and professionals.
+            </p>
+            <div class="footer-socials">
+              <a
+                href="https://www.linkedin.com/company/setu-digital-solutions"
+                title="LinkedIn"
+                class="social-link"
+                target="_blank"
+                ><i class="fab fa-linkedin-in"></i></a
+              >
+              <a href="https://twitter.com/setudigisol" title="Twitter" class="social-link" target="_blank"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.instagram.com/setudigitalsolutions" title="Instagram" class="social-link" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+
+          <div class="footer-section">
+            <h4>Services</h4>
+            <ul class="footer-links">
+              <li><a href="services.html">Business Websites</a></li>
+              <li><a href="services.html">Portfolio Sites</a></li>
+              <li><a href="services.html">E-Commerce</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h4>Company</h4>
+            <ul class="footer-links">
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="work.html">Our Work</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="footer-copyright">
+            <p>
+              © <span id="year"></span> Setu Digital Solutions. All rights
+              reserved.
+            </p>
+          </div>
+          <div class="footer-tagline">
+            <p>
+              Crafted with <span class="heart">❤️</span> to help businesses grow
+              online.
+            </p>
+          </div>
         </div>
       </div>
-      <div class="hero-visual animate fade-in">
-        <!-- Illustration / Graphic Placeholder -->
-      </div>
-    </div>
-  </section>
+    </footer>
 
-  <!-- Services Overview -->
-  <section id="services" class="services section">
-    <div class="container">
-      <header class="section-header animate fade-up">
-        <h2>What We Do</h2>
-        <p>End-to-end solutions for your digital presence</p>
-      </header>
-      <div class="services-grid">
-        <article class="service-card animate fade-up">
-          <h3>Website Development</h3>
-          <p>Fast, responsive, and SEO-friendly websites built with modern standards.</p>
-        </article>
-        <article class="service-card animate fade-up" data-delay="100">
-          <h3>UI / UX Design</h3>
-          <p>User-centered designs focused on clarity, usability, and conversions.</p>
-        </article>
-        <article class="service-card animate fade-up" data-delay="200">
-          <h3>Maintenance & Support</h3>
-          <p>Ongoing improvements, performance monitoring, and security updates.</p>
-        </article>
-      </div>
-      <div class="section-cta">
-        <a href="services.html" class="text-link">View All Services →</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Work Preview -->
-  <section class="work-preview section dark">
-    <div class="container">
-      <header class="section-header light animate fade-up">
-        <h2>Selected Work</h2>
-        <p>Real projects. Real results.</p>
-      </header>
-      <div class="work-grid">
-        <!-- Project cards placeholder -->
-      </div>
-      <div class="section-cta">
-        <a href="work.html" class="btn secondary">View Our Work</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- About Preview -->
-  <section class="about-preview section">
-    <div class="container about-grid">
-      <div class="about-content animate fade-up">
-        <h2>About Setu Digital Solutions</h2>
-        <p>
-          We help startups and businesses establish a strong digital foundation
-          through clean design, robust development, and strategic thinking.
-        </p>
-        <a href="about.html" class="text-link">Learn More About Us →</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact CTA -->
-  <section class="cta section saffron">
-    <div class="container animate fade-up">
-      <h2>Have a project in mind?</h2>
-      <p>Let’s discuss how we can help your business grow online.</p>
-      <a href="contact.html" class="btn primary">Contact Us</a>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container footer-grid">
-      <div class="footer-brand">
-        <h3>Setu Digital Solutions</h3>
-        <p>Building high-quality digital experiences.</p>
-      </div>
-      <nav class="footer-nav" aria-label="Footer Navigation">
-        <ul>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="work.html">Work</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-      <div class="footer-legal">
-        <p>© 2026 Setu Digital Solutions. All rights reserved.</p>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Scripts -->
-  <script src="/js/main.js"></script>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js" defer></script>
+    <script>
+      // Initialize EmailJS when library loads; replace the public key with your value before deployment
+      document.addEventListener('DOMContentLoaded', function () {
+        if (window.emailjs && typeof emailjs.init === 'function') {
+          try {
+            // Placeholder: set your EmailJS public key in `js/script.js` `EMAIL_CONFIG.publicKey`
+            // emailjs.init('YOUR_EMAILJS_PUBLIC_KEY');
+          } catch (err) {
+            // silent
+          }
+        }
+      });
+    </script>
+    <script src="js/script.js" defer></script>
+  </body>
 </html>

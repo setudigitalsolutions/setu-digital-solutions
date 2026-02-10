@@ -1,150 +1,291 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <!-- Basic Meta -->
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Work | Setu Digital Solutions</title>
-  <meta name="description" content="Explore projects built by Setu Digital Solutions including client work and learning-based projects." />
-  <meta name="keywords" content="web development portfolio, website projects, frontend projects, client websites" />
-  <meta name="author" content="Setu Digital Solutions" />
-
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
-
-  <!-- Styles (no /assets as requested) -->
-  <link rel="stylesheet" href="css/reset.css" />
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/animations.css" />
-</head>
-<body>
-
-  <!-- Header -->
-  <header class="header">
-    <div class="container header-inner">
-      <a href="index.html" class="logo">Setu<span>Digital</span></a>
-      <nav class="navbar" aria-label="Primary Navigation">
-        <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="work.html" class="active">Work</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html" class="nav-cta">Contact</a></li>
-        </ul>
-      </nav>
-      <button class="menu-toggle" aria-label="Open Menu"></button>
-    </div>
-  </header>
-
-  <!-- Page Hero -->
-  <section class="section hero">
-    <div class="container animate fade-up">
-      <h1>Our Work</h1>
-      <p>
-        A selection of projects including client work and hands-on projects
-        built while learning and experimenting with modern web technologies.
-      </p>
-    </div>
-  </section>
-
-  <!-- Projects Grid -->
-  <section class="section">
-    <div class="container">
-      <div class="services-grid">
-
-        <!-- Project Card -->
-        <article class="service-card animate fade-up">
-          <h3>Business Website</h3>
-          <p>
-            A responsive business website built using HTML, CSS, and JavaScript
-            with a focus on clean UI, performance, and SEO fundamentals.
-          </p>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Our Work — Setu Digital Solutions</title>
+    <meta
+      name="description"
+      content="See our portfolio of professional websites built for businesses and professionals. Fast, clean, and conversion-focused designs."
+    />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <meta name="theme-color" content="#0b3d91" />
+    <meta property="og:title" content="Our Work — Setu Digital Solutions" />
+    <meta property="og:description" content="Portfolio of professional websites built for businesses and professionals." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="/work.html" />
+    <meta property="og:site_name" content="Setu Digital Solutions" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Setu Digital Solutions",
+        "description": "Professional website portfolio.",
+        "url": "/work.html"
+      }
+    </script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-row">
+        <a class="brand" href="index.html"><span>Setu</span>Digital</a>
+        <button
+          class="nav-toggle"
+          aria-controls="primary-nav"
+          aria-expanded="false"
+          aria-label="Open menu"
+        >
+          <span class="hamburger"></span>
+        </button>
+        <nav id="primary-nav" class="primary-nav" aria-label="Main navigation">
           <ul>
-            <li>Responsive layout</li>
-            <li>Modern UI design</li>
-            <li>SEO-ready structure</li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="work.html">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
-        </article>
-
-        <!-- Project Card -->
-        <article class="service-card animate fade-up" data-delay="100">
-          <h3>Portfolio Website</h3>
-          <p>
-            Personal portfolio project showcasing skills, projects, and
-            animations using pure frontend technologies.
-          </p>
-          <ul>
-            <li>Scroll-based animations</li>
-            <li>Mobile-first design</li>
-            <li>Clean information architecture</li>
-          </ul>
-        </article>
-
-        <!-- Project Card -->
-        <article class="service-card animate fade-up" data-delay="200">
-          <h3>Client Landing Page</h3>
-          <p>
-            A conversion-focused landing page created for a client to
-            highlight services and generate leads.
-          </p>
-          <ul>
-            <li>Clear CTA placement</li>
-            <li>Fast load times</li>
-            <li>User-focused layout</li>
-          </ul>
-        </article>
-
-        <!-- Learning Project -->
-        <article class="service-card animate fade-up" data-delay="300">
-          <h3>Learning Project: UI Experiments</h3>
-          <p>
-            A collection of UI components and layout experiments built
-            while learning advanced CSS and JavaScript techniques.
-          </p>
-          <ul>
-            <li>Flexbox & Grid layouts</li>
-            <li>Micro-interactions</li>
-            <li>Reusable components</li>
-          </ul>
-        </article>
-
+        </nav>
+        <a class="btn" href="contact.html">Get A Quote</a>
       </div>
-    </div>
-  </section>
+    </header>
 
-  <!-- CTA -->
-  <section class="section dark">
-    <div class="container animate fade-up">
-      <h2>Want to see what we can build for you?</h2>
-      <p>Let’s turn your idea into a high-quality digital product.</p>
-      <a href="contact.html" class="btn secondary">Start a Project</a>
-    </div>
-  </section>
+    <main>
+      <section class="hero-page">
+        <div class="container">
+          <h1>Selected Work</h1>
+          <p class="lead">Handpicked projects built for clarity, speed and conversions</p>
+        </div>
+      </section>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container footer-grid">
-      <div>
-        <h3>Setu Digital Solutions</h3>
-        <p>Designing and building reliable web experiences.</p>
+      <section class="portfolio container">
+        <div class="portfolio-grid">
+          <article class="portfolio-item">
+            <div class="portfolio-image">
+              <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" class="portfolio-illustration">
+                <!-- Solar Panel Grid -->
+                <rect x="40" y="50" width="220" height="200" rx="8" fill="#f5f7ff" stroke="#0b3d91" stroke-width="3"/>
+                <!-- Panel 1 -->
+                <rect x="50" y="60" width="50" height="50" rx="4" fill="#0bb37a" opacity="0.9"/>
+                <line x1="58" y1="68" x2="92" y2="68" stroke="#0b3d91" stroke-width="1.5" opacity="0.3"/>
+                <line x1="58" y1="78" x2="92" y2="78" stroke="#0b3d91" stroke-width="1.5" opacity="0.3"/>
+                <line x1="58" y1="88" x2="92" y2="88" stroke="#0b3d91" stroke-width="1.5" opacity="0.3"/>
+                <line x1="58" y1="98" x2="92" y2="98" stroke="#0b3d91" stroke-width="1.5" opacity="0.3"/>
+                <!-- Panel 2 -->
+                <rect x="115" y="60" width="50" height="50" rx="4" fill="#0b3d91" opacity="0.8"/>
+                <line x1="123" y1="68" x2="157" y2="68" stroke="#0bb37a" stroke-width="1.5" opacity="0.4"/>
+                <line x1="123" y1="78" x2="157" y2="78" stroke="#0bb37a" stroke-width="1.5" opacity="0.4"/>
+                <line x1="123" y1="88" x2="157" y2="88" stroke="#0bb37a" stroke-width="1.5" opacity="0.4"/>
+                <line x1="123" y1="98" x2="157" y2="98" stroke="#0bb37a" stroke-width="1.5" opacity="0.4"/>
+                <!-- Panel 3 -->
+                <rect x="180" y="60" width="50" height="50" rx="4" fill="#0bb37a" opacity="0.7"/>
+                <line x1="188" y1="68" x2="222" y2="68" stroke="#0b3d91" stroke-width="1.5" opacity="0.3"/>
+                <line x1="188" y1="78" x2="222" y2="78" stroke="#0b3d91" stroke-width="1.5" opacity="0.3"/>
+                <line x1="188" y1="88" x2="222" y2="88" stroke="#0b3d91" stroke-width="1.5" opacity="0.3"/>
+                <line x1="188" y1="98" x2="222" y2="98" stroke="#0b3d91" stroke-width="1.5" opacity="0.3"/>
+                <!-- Sun icon -->
+                <circle cx="150" cy="130" r="25" fill="#fbbf24" opacity="0.2"/>
+                <circle cx="150" cy="130" r="15" fill="#fbbf24"/>
+                <line x1="150" y1="105" x2="150" y2="95" stroke="#fbbf24" stroke-width="3" stroke-linecap="round"/>
+                <line x1="150" y1="155" x2="150" y2="165" stroke="#fbbf24" stroke-width="3" stroke-linecap="round"/>
+                <!-- Data graph -->
+                <polyline points="50,180 85,160 120,175 155,140 190,155 225,130" fill="none" stroke="#0b3d91" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <!-- Legend -->
+                <text x="50" y="210" font-size="10" fill="#6b7280" font-weight="500">Efficiency</text>
+                <text x="150" y="210" font-size="10" fill="#0b3d91" font-weight="600" text-anchor="middle">Output</text>
+                <text x="220" y="210" font-size="10" fill="#0bb37a" font-weight="500" text-anchor="end">Performance</text>
+              </svg>
+            </div>
+            <h3>SolarTech Pro Solutions</h3>
+            <p class="portfolio-meta">Solar Manufacturer Website</p>
+            <p>Professional website showcasing multiple solar product lines, specifications, and technology features. Includes product comparison tools, technical documentation, and inquiry forms for bulk orders.</p>
+            <div class="portfolio-tags">
+              <span>Product Showcase</span>
+              <span>Specs & Docs</span>
+              <span>B2B Lead Gen</span>
+            </div>
+          </article>
+
+          <article class="portfolio-item">
+            <div class="portfolio-image">
+              <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" class="portfolio-illustration">
+                <!-- Camera body -->
+                <rect x="60" y="80" width="180" height="130" rx="12" fill="#0b3d91" stroke="#0b3d91" stroke-width="2"/>
+                <!-- Lens ring -->
+                <circle cx="150" cy="130" r="45" fill="none" stroke="#0bb37a" stroke-width="4"/>
+                <circle cx="150" cy="130" r="35" fill="#1a1a1a" opacity="0.8"/>
+                <!-- Lens glass reflection -->
+                <circle cx="150" cy="130" r="28" fill="none" stroke="#fbbf24" stroke-width="2" opacity="0.6"/>
+                <ellipse cx="140" cy="120" rx="8" ry="10" fill="white" opacity="0.4"/>
+                <!-- Flash -->
+                <rect x="180" y="95" width="20" height="15" rx="2" fill="#fbbf24"/>
+                <!-- Hotshoe -->
+                <rect x="140" y="70" width="20" height="12" rx="2" fill="#0bb37a"/>
+                <!-- Shutter button -->
+                <circle cx="75" cy="95" r="6" fill="#0bb37a"/>
+                <!-- Mode dial -->
+                <circle cx="75" cy="140" r="10" fill="none" stroke="#0bb37a" stroke-width="2"/>
+                <line x1="75" y1="130" x2="75" y2="120" stroke="#0bb37a" stroke-width="2"/>
+                <!-- Gallery frames -->
+                <rect x="85" y="220" width="25" height="20" rx="2" fill="#0bb37a" opacity="0.7"/>
+                <rect x="115" y="220" width="25" height="20" rx="2" fill="#0b3d91" opacity="0.8"/>
+                <rect x="145" y="220" width="25" height="20" rx="2" fill="#0bb37a" opacity="0.6"/>
+                <rect x="175" y="220" width="25" height="20" rx="2" fill="#0b3d91" opacity="0.7"/>
+              </svg>
+            </div>
+            <h3>SnapMoments Studio</h3>
+            <p class="portfolio-meta">Photography & Videography</p>
+            <p>Beautiful portfolio website for professional photographer and videographer specializing in weddings and events. Features gallery galleries, service packages, testimonials, and online booking system.</p>
+            <div class="portfolio-tags">
+              <span>Photo Gallery</span>
+              <span>Video Gallery</span>
+              <span>Online Booking</span>
+            </div>
+          </article>
+
+          <article class="portfolio-item">
+            <div class="portfolio-image">
+              <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" class="portfolio-illustration">
+                <!-- Main package box -->
+                <path d="M 60 140 L 80 100 L 220 100 L 240 140 L 240 180 L 60 180 Z" fill="#0b3d91" stroke="#0b3d91" stroke-width="2"/>
+                <!-- Top flap left -->
+                <path d="M 80 100 L 100 70 L 120 100 Z" fill="#0bb37a" opacity="0.9"/>
+                <!-- Top flap right -->
+                <path d="M 220 100 L 200 70 L 180 100 Z" fill="#0bb37a" opacity="0.7"/>
+                <!-- Box front -->
+                <rect x="60" y="140" width="180" height="70" rx="4" fill="#0bb37a" opacity="0.3"/>
+                <!-- Package label -->
+                <rect x="80" y="160" width="140" height="35" rx="3" fill="white"/>
+                <!-- Label text lines -->
+                <line x1="90" y1="170" x2="170" y2="170" stroke="#0b3d91" stroke-width="2" stroke-linecap="round"/>
+                <line x1="90" y1="180" x2="210" y2="180" stroke="#6b7280" stroke-width="1.5" stroke-linecap="round"/>
+                <line x1="90" y1="188" x2="200" y2="188" stroke="#6b7280" stroke-width="1.5" stroke-linecap="round"/>
+                <!-- Items inside -->
+                <circle cx="100" cy="130" r="8" fill="#fbbf24" opacity="0.8"/>
+                <rect x="145" y="120" width="12" height="15" rx="2" fill="#0b3d91" opacity="0.7"/>
+                <polygon points="190,125 185,115 195,115" fill="#fbbf24" opacity="0.8"/>
+                <!-- Delivery truck icon -->
+                <g transform="translate(80, 220)">
+                  <rect x="0" y="10" width="50" height="30" rx="3" fill="#0b3d91" opacity="0.8"/>
+                  <rect x="45" y="8" width="20" height="20" rx="2" fill="#0b3d91" opacity="0.6"/>
+                  <circle cx="15" cy="45" r="8" fill="#0bb37a"/>
+                  <circle cx="55" cy="45" r="8" fill="#0bb37a"/>
+                </g>
+                <!-- Checkmark -->
+                <circle cx="220" cy="100" r="16" fill="#0bb37a"/>
+                <path d="M 215 100 L 218 103 L 225 96" stroke="white" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3>PrintHub Stationery</h3>
+            <p class="portfolio-meta">E-Commerce + Printing Services</p>
+            <p>Full e-commerce platform for stationery shop with product catalog, printing service options, order management, and home delivery tracking. Offers custom banner printing, visiting cards, ID cards, and bulk stationery orders.</p>
+            <div class="portfolio-tags">
+              <span>E-Commerce</span>
+              <span>Custom Printing</span>
+              <span>Home Delivery</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- <section class="stats container">
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-number">50+</div>
+            <p>Websites Built</p>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">98%</div>
+            <p>Client Satisfaction</p>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">7</div>
+            <p>Day Average Delivery</p>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">100%</div>
+            <p>Mobile Responsive</p>
+          </div>
+        </div>
+      </section> -->
+
+      <section class="cta-section container">
+        <h2>Impressed? Let's build yours.</h2>
+        <a class="btn btn-primary btn-lg" href="contact.html">Start Your Project</a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h4>Setu Digital Solutions</h4>
+            <p>
+              Building professional websites that drive real results for
+              businesses and professionals.
+            </p>
+            <div class="footer-socials">
+              <a
+                href="https://www.linkedin.com/company/setu-digital-solutions"
+                title="LinkedIn"
+                class="social-link"
+                target="_blank"
+                ><i class="fab fa-linkedin-in"></i></a
+              >
+              <a href="https://twitter.com/setudigisol" title="Twitter" class="social-link" target="_blank"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.instagram.com/setudigitalsolutions" title="Instagram" class="social-link" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+
+          <div class="footer-section">
+            <h4>Services</h4>
+            <ul class="footer-links">
+              <li><a href="services.html">Business Websites</a></li>
+              <li><a href="services.html">Portfolio Sites</a></li>
+              <li><a href="services.html">E-Commerce</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h4>Company</h4>
+            <ul class="footer-links">
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="work.html">Our Work</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="footer-copyright">
+            <p>
+              © <span id="year"></span> Setu Digital Solutions. All rights
+              reserved.
+            </p>
+          </div>
+          <div class="footer-tagline">
+            <p>
+              Crafted with <span class="heart">❤️</span> to help businesses grow
+              online.
+            </p>
+          </div>
+        </div>
       </div>
-      <nav aria-label="Footer Navigation">
-        <ul>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="work.html">Work</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-      <div>
-        <p>© 2026 Setu Digital Solutions</p>
-      </div>
-    </div>
-  </footer>
+    </footer>
 
-  <!-- Scripts (no /assets as requested) -->
-  <script src="js/main.js"></script>
-</body>
+    <script src="js/script.js" defer></script>
+  </body>
 </html>
